@@ -2,7 +2,7 @@ import { AppBar, Toolbar, Box,Typography , styled, colors } from "@mui/material"
 
 //importing search
 import CustomButton from "./customButton";
-import Search from './search';
+import Search from './Search';
 
 
 const StyledHeader = styled(AppBar)`
