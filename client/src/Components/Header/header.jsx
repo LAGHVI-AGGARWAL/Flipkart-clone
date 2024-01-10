@@ -1,7 +1,8 @@
 import { AppBar, Toolbar, Box,Typography , styled, colors } from "@mui/material";
 
 //importing search
-import Search from "./Search";
+import Search from './Search';
+
 
 const StyledHeader = styled(AppBar)`
   background: #2874f0;
@@ -9,13 +10,13 @@ const StyledHeader = styled(AppBar)`
 `;
 
 const Component = styled(Box)`
-  margin-left: 12%;
+  margin-left: 9%;
   line-height : 1;
 `;
 
 const SubHeading = styled(Box)`
-  margin-left: -5%;
-  font-size : 12px;
+  ${'' /* margin-left: 2%; */}
+  font-size : 11px;
   font-style : italic;
 `;
 
@@ -32,7 +33,7 @@ const header = () => {
     const subURL = 'https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/plus_aef861.png';
   return (
     <StyledHeader>
-      <Toolbar>
+      <Toolbar style={{minHeight:65}}>
         <Component>
           <img src={logoURL} alt="logo" style={{ width: 75 }} />
           <Box style = {{display : 'flex'}}>
