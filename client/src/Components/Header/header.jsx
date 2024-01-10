@@ -1,7 +1,8 @@
 import { AppBar, Toolbar, Box,Typography , styled, colors } from "@mui/material";
 
 //importing search
-import Search from './Search';
+import CustomButton from "./customButton";
+import Search from './search';
 
 
 const StyledHeader = styled(AppBar)`
@@ -26,6 +27,9 @@ const PlusImage = styled('img')({
     marginLeft: 4
 })
 
+const CustomButtonWrapper = styled(Box)`
+        margin : 0 5% 0 auto;
+`
 
 const header = () => {
   const logoURL =
@@ -44,6 +48,9 @@ const header = () => {
                     </Box>
                 </Component>
         < Search />
+        <CustomButtonWrapper>
+            <CustomButton />
+        </CustomButtonWrapper>
       </Toolbar>
     </StyledHeader>
   );
